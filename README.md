@@ -94,3 +94,8 @@ To explore the projects in this repository, clone the repository and navigate to
 ```bash
 git clone https://github.com/your-username/ml-projects.git
 cd ml-projects
+```
+###Contact
+For any questions or suggestions, feel free to reach out via email at nihithna@buffalo.edu.
+
+

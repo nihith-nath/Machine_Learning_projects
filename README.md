@@ -1,10 +1,10 @@
 
 # Machine Learning Projects
 
-Welcome to my Machine Learning GitHub repository. This repository contains detailed reports and projects that I have worked on, showcasing various machine learning techniques and applications. Below is a summary of the key projects included in this repository.
+## Introduction
+Welcome to my Machine Learning GitHub repository! This repository contains various machine learning projects that I have worked on, including clustering, classification, and regression analyses. Each project includes detailed reports and insights derived from the data.
 
 ## Table of Contents
-
 1. [Clustering Analysis](#clustering-analysis)
 2. [MNIST Dataset Classification](#mnist-dataset-classification)
 3. [California Housing Price Prediction](#california-housing-price-prediction)
@@ -12,90 +12,89 @@ Welcome to my Machine Learning GitHub repository. This repository contains detai
 ---
 
 ## Clustering Analysis
+### Project Overview
+This project focuses on clustering analysis to identify patterns and group similar data points. The Silhouette Score is used to evaluate the clustering performance.
 
-### Introduction
-This project focuses on clustering analysis using various clustering algorithms to group similar data points. The objective is to explore and understand the underlying structure of the data by segmenting it into meaningful clusters.
+### Results
+- **Silhouette Score:** 0.75 (indicating good clustering structure)
 
-### Methodology
-- **Algorithms Used**: K-means, Hierarchical Clustering, DBSCAN
-- **Data Preprocessing**: Standardization, Dimensionality Reduction (PCA)
-- **Evaluation Metrics**: Silhouette Score, Davies-Bouldin Index
-
-### Key Findings
-- K-means clustering identified clear segments within the data with a Silhouette Score of `X`.
-- Hierarchical clustering provided a dendrogram that helped in understanding the data hierarchy.
-- DBSCAN was effective in identifying outliers and noise within the dataset.
-
-### Conclusion
-Clustering analysis revealed significant patterns and groupings in the data, providing insights for further analysis and application.
+### Key Insights
+- The clustering analysis successfully grouped data points with similar characteristics.
+- High silhouette score suggests well-defined clusters.
 
 ---
 
 ## MNIST Dataset Classification
+### Project Overview
+This project involves classifying handwritten digits from the MNIST dataset using various machine learning models.
 
-### Introduction
-The MNIST dataset classification project aims to build and evaluate models to classify handwritten digits from 0 to 9. This project explores different machine learning algorithms and their performance on image data.
+### Data Preprocessing
+- Images were normalized to facilitate model convergence.
+- Data was split into training and testing sets.
 
-### Methodology
-- **Dataset**: MNIST handwritten digit dataset
-- **Algorithms Used**: Logistic Regression, SVM, Random Forest, Convolutional Neural Networks (CNN)
-- **Data Preprocessing**: Normalization, Image Augmentation
-- **Evaluation Metrics**: Accuracy, Precision, Recall, F1 Score
+### Algorithms and Results
+1. **Logistic Regression**
+   - **Best Regularization Parameter (C):** 0.1
+   - **Test Accuracy:** 91%
+   - **Precision:** High precision for class '1' (0.96)
+   - **Recall:** High recall for class '0' (0.98)
+   - **F1-Score:** Consistent across most classes, averaging at 0.91
 
-### Key Findings
-- **Logistic Regression**: Achieved an accuracy of `X%` with basic preprocessing.
-- **SVM**: Improved accuracy to `Y%` with kernel tricks.
-- **Random Forest**: Provided robust performance with an accuracy of `Z%`.
-- **CNN**: Achieved the highest accuracy of `W%`, leveraging deep learning techniques.
-
-### Conclusion
-The CNN model significantly outperformed traditional machine learning models, demonstrating the power of deep learning in image classification tasks.
+### Key Insights
+- Logistic Regression achieved a peak accuracy of 91% with a regularization parameter (C) of 0.1.
+- The model demonstrated a good balance between precision and recall.
 
 ---
 
 ## California Housing Price Prediction
+### Project Overview
+This project aims to predict median house values in California using the 1990 California census dataset.
 
-### Introduction
-This project involves predicting median house values in California based on the 1990 census data. The objective is to explore various regression models and determine the best approach for accurate price prediction.
+### Data Features
+- **MedInc:** Median income in block group
+- **HouseAge:** Median house age in block group
+- **AveRooms:** Average number of rooms per household
+- **AveBedrms:** Average number of bedrooms per household
+- **Population:** Block group population
+- **AveOccup:** Average house occupancy
+- **Latitude:** Block group latitude
+- **Longitude:** Block group longitude
+- **MedHouseVal:** Median house value for households within a block group
 
-### Methodology
-- **Dataset**: California Housing dataset from the 1990 census
-- **Data Features**: Median income, house age, average number of rooms, latitude, longitude, etc.
-- **Models Used**: Simple Linear Regression, Multiple Linear Regression, Locally Weighted Linear Regression (LWLR)
-- **Evaluation Metrics**: Mean Absolute Error (MAE), Mean Squared Error (MSE), R² Score
+### Models and Results
+1. **Simple Linear Regression**
+   - **Train MAE:** 0.617
+   - **Test MAE:** 0.618
+   - **Train MSE:** 0.716
+   - **Test MSE:** 0.720
+   - **Train R²:** 0.460
+   - **Test R²:** 0.463
 
-### Key Findings
-1. **Exploratory Data Analysis (EDA)**:
-   - No missing values were found in the dataset.
-   - Median income showed a strong positive correlation with median house value.
-   - Geographical patterns indicated higher house values in coastal areas.
+2. **Multiple Linear Regression**
+   - **Train MSE:** 0.5508
+   - **Test MSE:** 0.5634
+   - **R-squared:** 0.5749
 
-2. **Simple Linear Regression**:
-   - MAE: `0.617` (Train), `0.618` (Test)
-   - R²: `0.460` (Train), `0.463` (Test)
+3. **Locally Weighted Linear Regression (LWLR)**
+   - **Tau = 0.1:**
+     - Train MSE: 0.6765
+     - Test MSE: 0.7042
+     - Train R²: 0.4974
+     - Test R²: 0.4593
 
-3. **Multiple Linear Regression**:
-   - Lower MSE and higher R² compared to simple linear regression.
-   - Final model equation: `Y = 0.8167 * MedInc + 0.1775 * HouseAge - 0.1303 * AveRooms - 0.4503 * Longitude + 2.0709`
+### Key Insights
+- The Simple Linear Regression model had moderate performance with an R² score of 0.463.
+- The Multiple Linear Regression model improved the prediction accuracy with an R² score of 0.5749.
+- LWLR provided varying accuracy levels, with Tau=0.1 offering the best fit.
 
-4. **Locally Weighted Linear Regression (LWLR)**:
-   - Tau values were tuned for optimal performance.
-   - Tau=0.1 provided the best fit with Train MSE=`0.6765` and Test MSE=`0.7042`.
 
 ### Conclusion
 The multiple linear regression model offered a balanced approach with improved prediction accuracy. Further enhancements can be achieved by exploring more complex models and feature engineering.
 
 ---
 
-## How to Use
+Feel free to explore the repository to find detailed reports and code implementations for each project. Your feedback and suggestions are welcome!
 
-To explore the projects in this repository, clone the repository and navigate to the respective project directories. Each project folder contains the detailed report and the code used for analysis.
-
-```bash
-git clone https://github.com/your-username/ml-projects.git
-cd ml-projects
-```
-###Contact
-For any questions or suggestions, feel free to reach out via email at nihithna@buffalo.edu.
+---
 
 

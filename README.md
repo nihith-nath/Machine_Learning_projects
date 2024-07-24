@@ -45,7 +45,6 @@ This project involves classifying handwritten digits from the MNIST dataset usin
 - The model demonstrated a good balance between precision and recall.
 
 ---
-
 ## California Housing Price Prediction
 ### Project Overview
 This project aims to predict median house values in California using the 1990 California census dataset.
@@ -87,14 +86,8 @@ This project aims to predict median house values in California using the 1990 Ca
 - The Multiple Linear Regression model improved the prediction accuracy with an R² score of 0.5749.
 - LWLR provided varying accuracy levels, with Tau=0.1 offering the best fit.
 
-
-### Conclusion
-The multiple linear regression model offered a balanced approach with improved prediction accuracy. Further enhancements can be achieved by exploring more complex models and feature engineering.
-
 ---
 
 Feel free to explore the repository to find detailed reports and code implementations for each project. Your feedback and suggestions are welcome!
 
 ---
-
-
